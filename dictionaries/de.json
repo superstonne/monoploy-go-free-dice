@@ -102,7 +102,11 @@
     "loadingLinks": "Links werden geladen..."
   },
   "footer": {
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "aboutUsTitle": "Über Uns",
+    "aboutUsContent": "Monopoly Go Free Dice bietet täglich aktualisierte kostenlose Würfellinks, um Ihr Spiel zu verbessern. Bleiben Sie vorne und bauen Sie Ihr Immobilienimperium auf, ohne echtes Geld auszugeben.",
+    "quickLinksTitle": "Schnelle Links",
+    "partnerLinksTitle": "Partner Links"
   },
   "howToGet": {
     "title": "Wie Sie Kostenlose Würfel von Monopoly Go Erhalten",

@@ -102,7 +102,11 @@
     "loadingLinks": "加载链接中..."
   },
   "footer": {
-    "rights": "版权所有。"
+    "rights": "版权所有。",
+    "aboutUsTitle": "关于我们",
+    "aboutUsContent": "Monopoly Go Free Dice 提供每日更新的免费骰子链接，增强您的游戏体验。领先一步，建立您的财产帝国，无需花费真实货币。",
+    "quickLinksTitle": "快速链接",
+    "partnerLinksTitle": "合作伙伴链接"
   },
   "howToGet": {
     "title": "如何获得 Monopoly Go 免费骰子",

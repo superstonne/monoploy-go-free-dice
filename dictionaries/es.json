@@ -102,7 +102,11 @@
     "loadingLinks": "Cargando enlaces..."
   },
   "footer": {
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "aboutUsTitle": "Sobre Nosotros",
+    "aboutUsContent": "Monopoly Go Free Dice ofrece enlaces de dados gratis actualizados diariamente para mejorar tu juego. Mantente a la vanguardia y construye tu imperio de propiedades sin gastar dinero real.",
+    "quickLinksTitle": "Enlaces Rápidos",
+    "partnerLinksTitle": "Enlaces de Socios"
   },
   "howToGet": {
     "title": "Cómo Obtener Dados Gratis de Monopoly Go",

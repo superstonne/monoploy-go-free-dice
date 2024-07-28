@@ -102,7 +102,11 @@
     "loadingLinks": "Chargement des liens..."
   },
   "footer": {
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "aboutUsTitle": "À Propos de Nous",
+    "aboutUsContent": "Monopoly Go Free Dice propose des liens de dés gratuits mis à jour quotidiennement pour améliorer votre jeu. Restez en avance et construisez votre empire immobilier sans dépenser d'argent réel.",
+    "quickLinksTitle": "Liens Rapides",
+    "partnerLinksTitle": "Liens Partenaires"
   },
   "howToGet": {
     "title": "Comment Obtenir des Dés Gratuits de Monopoly Go",
