@@ -1,7 +1,7 @@
 // lib/generateSitemap.js
 const baseUrl = 'https://www.monopoly-go-free-dice.com'
 
-export function generateSitemap(lang) {
+export default function generateSitemap(lang) {
   const routes = ['', '/latest-links', '/how-to-get', '/faq', '/contact']
   
   return routes.map(route => ({
