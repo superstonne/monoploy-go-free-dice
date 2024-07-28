@@ -1,6 +1,26 @@
 // app/[lang]/contact/page.js
 import { getDictionary } from '../../../lib/i18n'
 
+import { generateCanonicalUrl } from '../../../lib/metadata'
+
+export async function generateMetadata({ params }) {
+  const dict = await getDictionary(params.lang)
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${params.lang}/contact`
+
+  return {
+    title: dict.contact.title,
+    description: dict.contact.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: dict.contact.title,
+      description: dict.contact.description,
+      url: canonicalUrl,
+    },
+  }
+}
+
 export default async function Contact({ params: { lang } }) {
   const dict = await getDictionary(lang)
 

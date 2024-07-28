@@ -1,6 +1,23 @@
 // app/[lang]/faq/page.js
 import { getDictionary } from '../../../lib/i18n'
 
+
+export async function generateMetadata({ params }) {
+  const dict = await getDictionary(params.lang)
+  const canonicalUrl = `https://www.monoploy-go-free-dice.com/${params.lang}/faq`
+
+  return {
+    title: dict.faq.title,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: dict.faq.title,
+      url: canonicalUrl,
+    },
+  }
+}
+
 export default async function FAQ({ params: { lang } }) {
   const dict = await getDictionary(lang)
 

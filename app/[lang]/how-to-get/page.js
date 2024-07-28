@@ -1,6 +1,24 @@
 // app/[lang]/how-to-get/page.js
 import { getDictionary } from '../../../lib/i18n'
 
+export async function generateMetadata({ params }) {
+  const dict = await getDictionary(params.lang)
+  const canonicalUrl = `https://www.monoploy-go-free-dice.com/${params.lang}/how-to-get`
+
+  return {
+    title: dict.howToGet.title,
+    description: dict.howToGet.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: dict.howToGet.title,
+      description: dict.howToGet.description,
+      url: canonicalUrl,
+    },
+  }
+}
+
 export default async function HowToGet({ params: { lang } }) {
   const dict = await getDictionary(lang)
 

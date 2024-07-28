@@ -3,6 +3,25 @@ import { Suspense } from 'react';
 import { getDictionary } from '../../../lib/i18n';
 import ClientLinks from './ClientLinks';
 
+export async function generateMetadata({ params }) {
+  const dict = await getDictionary(params.lang)
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${params.lang}/latest-links`
+
+  return {
+    title: dict.latestLinks.metaTitle,
+    description: dict.latestLinks.metaDescription,
+    keywords: [...dict.metadata.keywords, 'free dice', 'latest links', 'Monopoly Go'],
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: dict.latestLinks.title,
+      description: dict.latestLinks.description,
+      url: canonicalUrl,
+    },
+  }
+}
+
 export default async function MonopolyGoFreeDicePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
 
